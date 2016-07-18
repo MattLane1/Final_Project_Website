@@ -9,6 +9,6 @@ namespace Assignment_2_Matthew_Lane
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
-        }
+        } 
     }
 }
