@@ -181,6 +181,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\Burger10.jpg" />
+    <Content Include="Assets\Images\Burger20.jpg" />
+    <Content Include="Assets\Images\food.jpg" />
+    <Content Include="Assets\Images\logo.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
