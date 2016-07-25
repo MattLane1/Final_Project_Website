@@ -8,6 +8,8 @@ namespace Assignment_2_Matthew_Lane.Controllers
 {
     public class HomeController : Controller
     {
+        //
+        // GET: /Home/
         public ActionResult Index()
         {
             return View();
