@@ -11,24 +11,29 @@ namespace Assignment_2_Matthew_Lane.Controllers
     {
         //
         // GET: Store
-        public string Index()
+        public ActionResult Index()
         {
-            return "Hello from Store.Index()";
+            List<FoodType> foodtypes = new List<FoodType>
+            {
+                new FoodType("Appetizers"),
+                new FoodType("Mains"),
+                new FoodType("Desserts")
+            };
+
+            return View(foodtypes);
         }
         //
         // GET: /Store/Browse?genre=Disco
-        public string Browse(string genre)
+        public ActionResult Browse(string FoodType)
         {
-            string message = HttpUtility.HtmlEncode("Store.Browse, Genre = "
-        + genre);
-
-            return message;
+            FoodType foodTypeModel = new FoodType { Name = FoodType };
+            return View(foodTypeModel);
         }
         //
         // GET: /Store/Details/5
         public ActionResult Details(int id = 1)
         {
-            var appetizer = new Appetizers { Title = "Appetizer " + id };
+            Appetizers appetizer = new Appetizers { Title = "Appetizer " + id };
             return View(appetizer);
         }
     }
