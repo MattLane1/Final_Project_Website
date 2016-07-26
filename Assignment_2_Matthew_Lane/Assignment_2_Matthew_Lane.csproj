@@ -179,6 +179,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Appetizers.cs" />
     <Compile Include="Models\Desserts.cs" />
+    <Compile Include="Models\Food.cs" />
     <Compile Include="Models\FoodType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Mains.cs" />

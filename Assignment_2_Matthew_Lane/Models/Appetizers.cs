@@ -12,4 +12,6 @@ namespace Assignment_2_Matthew_Lane.Models
         public string Title { get; set; }
         public FoodType FoodGenre { get; set; }
     }
+
+    
 }
