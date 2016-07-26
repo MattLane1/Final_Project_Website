@@ -29,6 +29,7 @@ namespace Assignment_2_Matthew_Lane.Controllers
             FoodType foodTypeModel = new FoodType { Name = FoodType };
             return View(foodTypeModel);
         }
+     /* 
         //
         // GET: /Store/Details/5
         public ActionResult Details(int id = 1)
@@ -36,5 +37,6 @@ namespace Assignment_2_Matthew_Lane.Controllers
             Appetizers appetizer = new Appetizers { Title = "Appetizer " + id };
             return View(appetizer);
         }
+     */
     }
 }

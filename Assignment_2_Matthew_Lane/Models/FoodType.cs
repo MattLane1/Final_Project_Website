@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using Assignment_2_Matthew_Lane.Models;
 
+//Album class
+
 namespace Assignment_2_Matthew_Lane.Models
 {
     public class FoodType
@@ -26,6 +28,11 @@ namespace Assignment_2_Matthew_Lane.Models
             this.Name = Name;
         }
 
+        //FoodTypeID is the key used for the database
+        //foodGenre holds the information of what group the food belongs to (App, Main, Dessert)
+        //Name holds the foods name
+        public int foodTypeID { get; set; }
         public string Name { get; set; }
+        public FoodType foodGenre { get; set; }
     }
 }
