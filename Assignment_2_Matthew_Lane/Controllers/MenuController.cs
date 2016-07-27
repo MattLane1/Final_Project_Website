@@ -43,6 +43,20 @@ namespace Assignment_2_Matthew_Lane.Controllers
             return View(foodTypeModel);
         }
 
+        public ActionResult Mains(string FoodType)
+        {
+            FoodType foodTypeModel = new FoodType { Name = FoodType };
+
+            return View(foodTypeModel);
+        }
+
+        public ActionResult Desserts(string FoodType)
+        {
+            FoodType foodTypeModel = new FoodType { Name = FoodType };
+
+            return View(foodTypeModel);
+        }
+
 
         /* 
            //

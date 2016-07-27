@@ -269,6 +269,8 @@
     <Content Include="Views\Menu\Details.cshtml" />
     <Content Include="Views\Menu\Browse.cshtml" />
     <Content Include="Views\Menu\Appetizers.cshtml" />
+    <Content Include="Views\Menu\Mains.cshtml" />
+    <Content Include="Views\Menu\Desserts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

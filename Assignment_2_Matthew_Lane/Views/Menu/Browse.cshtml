@@ -17,10 +17,16 @@
 
 @if (Model.Name == "Mains")
 {
-    <p>MAINS!!!!!</p>
+    <p>Mains: </p>
+        <li>@Html.ActionLink("Bruchetta22", "Mains", new { FoodType = @"Bruchetta22" })</li>
+        <li>@Html.ActionLink("Pot Stickers22", "Mains", new { FoodType = @"Potstickers22" })</li>
+        <li>@Html.ActionLink("Nachos22", "Mains", new { FoodType = @"Nachos22" })</li>
 }
 
 @if (Model.Name == "Desserts")
 {
-    <p>DESSERTS!!!!!</p>
+    <p>Desserts: </p>
+        <li>@Html.ActionLink("Bruchetta44", "Desserts", new { FoodType = @"Bruchetta44" })</li>
+        <li>@Html.ActionLink("Pot Stickers44", "Desserts", new { FoodType = @"Potstickers44" })</li>
+        <li>@Html.ActionLink("Nachos44", "Desserts", new { FoodType = @"Nachos44" })</li>
 }
