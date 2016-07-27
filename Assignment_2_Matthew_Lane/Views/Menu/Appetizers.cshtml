@@ -10,7 +10,9 @@
 {
     <h2> Bearpaw Bruchetta: </h2>
 
-    <a href="@Url.Action("Index","Home")" class="navbar-brand"><img id="brand" alt="Brand" src="~/Assets/Images/Bruschetta_Thumb.jpg" /></a>
+    <!--This line sends ca call to MenuController -> Details and passes it the name "Bruchetta"-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = @"Bruchetta" })"> <img src="@Url.Content("~/Assets/Images/Bruschetta_Thumb.jpg")" alt="Home" /></a>
+
     <p> A blend of tomato, onion and basil on a toasted baguette</p>
 
 }
