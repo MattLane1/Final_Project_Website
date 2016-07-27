@@ -34,6 +34,16 @@ namespace Assignment_2_Matthew_Lane.Controllers
             FoodType foodTypeModel = new FoodType { Name = FoodType };
             return View(foodTypeModel);
         }
+
+
+        public ActionResult Appetizers(string FoodType)
+        {
+            FoodType foodTypeModel = new FoodType { Name = FoodType };
+
+            return View(foodTypeModel);
+        }
+
+
         /* 
            //
            // GET: /Store/Details/5

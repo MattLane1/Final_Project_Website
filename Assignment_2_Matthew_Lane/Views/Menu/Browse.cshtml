@@ -1,4 +1,5 @@
-﻿@model Assignment_2_Matthew_Lane.Models.FoodType
+﻿@using Assignment_2_Matthew_Lane.Models
+@model Assignment_2_Matthew_Lane.Models.FoodType
 
 @{
     ViewBag.Title = "Browse";
@@ -6,3 +7,20 @@
 
 <h2>Browsing Food Type: @Model.Name</h2>
 
+@if (Model.Name == "Appetizers")
+{
+    <p>Appetizers: </p>
+    <li>@Html.ActionLink("Bruchetta", "Appetizers", new { FoodType = @"Bruchetta" })</li>
+    <li>@Html.ActionLink("Pot Stickers", "Appetizers", new { FoodType = @"Potstickers" })</li>
+    <li>@Html.ActionLink("Nachos", "Appetizers", new { FoodType = @"Nachos" })</li>
+}
+
+@if (Model.Name == "Mains")
+{
+    <p>MAINS!!!!!</p>
+}
+
+@if (Model.Name == "Desserts")
+{
+    <p>DESSERTS!!!!!</p>
+}
