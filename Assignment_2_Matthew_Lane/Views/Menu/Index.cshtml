@@ -1,8 +1,19 @@
-﻿@model Assignment_2_Matthew_Lane.Models.FoodType
+﻿@using Assignment_2_Matthew_Lane.Models
+@model IEnumerable<FoodType>
 
 @{
     ViewBag.Title = "Index";
+
 }
 
-<h2>MENU!!!!</h2>
+<h3>Browse Food Types</h3>
+<p>
+    Select the type of food you wish to view:
+</p>
+<ul>
+    @foreach (FoodType item in Model)
+    {
+        <li>@Html.ActionLink(@item.Name, "Browse", new { FoodType = @item.Name })</li>
+    }
+</ul>
 
