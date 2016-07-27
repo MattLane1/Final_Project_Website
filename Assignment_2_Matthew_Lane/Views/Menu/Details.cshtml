@@ -6,3 +6,30 @@
 
 <h2>Appetizer: @Model.Name</h2>
 
+@switch (Model.Name)
+{
+    case "Bruchetta":
+        <img src="@Url.Content("~/Assets/Images/Bruschetta_Full.jpg")" alt="IMAGES" />
+        <p> Our classic bruchetta is chopped tomatoes, onions, basil and olive oil piled on a toasted baugette. </p>
+        <p>$5.00</p>
+        break;
+
+    case "Sliders":
+        <img src="@Url.Content("~/Assets/Images/Sliders_Full.jpg")" alt="IMAGES" />
+        <p> Our lamb sliders are made of ground milk fed lamb, topped with spinich and greens, mozzerella and smoked bacon. </p>
+        <p>$6.00</p>
+        break;
+
+    case "Nachos":
+        <img src="@Url.Content("~/Assets/Images/Nachos_Full.jpg")" alt="IMAGES" />
+        <p> Perfect for sharing! Our Nachos are pilled high with cheese, onion ground beef, tomatoes, peppers and house made salsa. </p>
+        <p>$10.00</p>
+        break;
+
+    case "Springrolls":
+        <img src="@Url.Content("~/Assets/Images/SpringRoll_Full.jpg")" alt="IMAGES" />
+        <p> Pork stuffed thai springrolls, served with a house made soy sauce dipping sauce. </p>
+        <p>$5.00</p>
+        break;
+
+}

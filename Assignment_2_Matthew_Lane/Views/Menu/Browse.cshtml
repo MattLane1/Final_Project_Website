@@ -1,4 +1,12 @@
-﻿@using Assignment_2_Matthew_Lane.Models
+﻿<!--
+   Image of sptring rolls ~ http://chinesefood.about.com/od/dimsumrecipes/r/springroll.htm
+   Image of Nachos ~ https://www.youtube.com/watch?v=oAqm9hE7jrs
+   Image of Sliders ~ http://www.americanlamb.com/app/uploads/2014/10/The-Country-Cat-Sliders.jpeg
+   Image of Bruchetta ~ https://www.google.ca/search?q=google+images&espv=2&biw=1920&bih=935&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiO1t_v3ZTOAhVMyoMKHfiQCTwQ_AUIBigB#tbm=isch&q=Bruchetta&imgrc=KK0Prelglz9YXM%3A
+-->
+
+
+@using Assignment_2_Matthew_Lane.Models
 @model Assignment_2_Matthew_Lane.Models.FoodType
 
 @{
@@ -10,9 +18,18 @@
 @if (Model.Name == "Appetizers")
 {
     <p>Appetizers: </p>
-    <li>@Html.ActionLink("Bruchetta", "Appetizers", new { FoodType = @"Bruchetta" })</li>
-    <li>@Html.ActionLink("Pot Stickers", "Appetizers", new { FoodType = @"Potstickers" })</li>
-    <li>@Html.ActionLink("Nachos", "Appetizers", new { FoodType = @"Nachos" })</li>
+    <!--This line sends ca call to MenuController -> Details and passes in Bruchetta-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Bruchetta" })"> <img src="@Url.Content("~/Assets/Images/Bruschetta_Thumb.jpg")" alt="Home" /></a>
+    <p>Bruchetta!</p>
+    <!--This line sends ca call to MenuController -> Details and passes in Sliders-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Sliders" })"> <img src="@Url.Content("~/Assets/Images/Sliders_Thumb.jpg")" alt="Home" /></a>
+    <p>Lamb Sliders!</p>
+    <!--This line sends ca call to MenuController -> Details and passes in Nachos-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Nachos" })"> <img src="@Url.Content("~/Assets/Images/Nachos_Thumb.jpg")" alt="Home" /></a>
+    <p>Nachos!</p>
+    <!--This line sends ca call to MenuController -> Details and passes in Springroll-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Springrolls" })"> <img src="@Url.Content("~/Assets/Images/Springroll_Thumb.jpg")" alt="Home" /></a>
+    <p>Spring Rolls!</p>
 }
 
 @if (Model.Name == "Mains")

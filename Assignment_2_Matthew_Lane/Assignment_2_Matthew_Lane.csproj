@@ -193,10 +193,14 @@
   <ItemGroup>
     <Content Include="Assets\Images\Bruschetta_Full.jpg" />
     <Content Include="Assets\Images\Bruschetta_Thumb.jpg" />
-    <Content Include="Assets\Images\Burger10.jpg" />
-    <Content Include="Assets\Images\Burger20.jpg" />
-    <Content Include="Assets\Images\food.jpg" />
+    <Content Include="Assets\Images\Location.jpg" />
     <Content Include="Assets\Images\logo.jpg" />
+    <Content Include="Assets\Images\Nachos_Full.jpg" />
+    <Content Include="Assets\Images\Nachos_Thumb.jpg" />
+    <Content Include="Assets\Images\Sliders_Full.jpg" />
+    <Content Include="Assets\Images\Sliders_Thumb.jpg" />
+    <Content Include="Assets\Images\SpringRoll_Full.jpg" />
+    <Content Include="Assets\Images\SpringRoll_Thumb.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

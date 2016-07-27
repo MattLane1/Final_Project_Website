@@ -6,16 +6,18 @@
 
 <h2>Browsing Food Type: Appetizers</h2>
 
-@if (Model.Name == "Bruchetta")
-{
-    <h2> Bearpaw Bruchetta: </h2>
 
-    <!--This line sends ca call to MenuController -> Details and passes it the name "Bruchetta"-->
-    <a href="@Url.Action("Details", "Menu", new { FoodType = @"Bruchetta" })"> <img src="@Url.Content("~/Assets/Images/Bruschetta_Thumb.jpg")" alt="Home" /></a>
+<!--<h2> Bearpaw Bruchetta: </h2> -->
 
-    <p> A blend of tomato, onion and basil on a toasted baguette</p>
 
-}
+  <!--This line sends ca call to MenuController -> Details and passes it the name of the menu object-->
+  <a href="@Url.Action("Details", "Menu", new { FoodType = @Model.Name })"> <img src="@Url.Content("~/Assets/Images/Bruschetta_Thumb.jpg")" alt="Home" /></a>
+  <p> </p>
+  <a href="@Url.Action("Details", "Menu", new { FoodType = @Model.Name })"> <img src="@Url.Content("~/Assets/Images/Burger20.jpg")" alt="Home" /></a>
+
+<!--<p> A blend of tomato, onion and basil on a toasted baguette</p>
+
+
 
 @if (Model.Name == "Potstickers")
 {
@@ -28,3 +30,4 @@
     <h2> Nachos: </h2>
     <p> A big basket of cheese Nachos, piled high with lettuce, tomatoes, ground beef, cheese and home made salsa. Perfect for sharing! </p>
 }
+-->
