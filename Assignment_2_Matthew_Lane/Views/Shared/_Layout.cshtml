@@ -32,6 +32,12 @@
 
     <!--TEMP PADDING -->
     <h3>PADDING</h3>
+
+    @if (Request.UrlReferrer != null)
+    {
+        <h2> <a class="bottomNav" onclick="history.go(-1); return false;" href="#">Back</a><br /> </h2>
+    }
+
     <div class="container body-content">
         @RenderBody()
 
@@ -41,7 +47,7 @@
         <footer>
 
             <!--TEMP  -->
-        <!--  <p>&copy; @DateTime.Now.Year - Matthew Lane</p> --> 
+          <p>&copy; @DateTime.Now.Year - Matthew Lane</p> 
         </footer>
     </div>
 

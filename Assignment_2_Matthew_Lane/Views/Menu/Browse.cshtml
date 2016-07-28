@@ -1,8 +1,18 @@
 ﻿<!--
+   Pictures of various foods generously donated by:    
+
    Image of sptring rolls ~ http://chinesefood.about.com/od/dimsumrecipes/r/springroll.htm
    Image of Nachos ~ https://www.youtube.com/watch?v=oAqm9hE7jrs
    Image of Sliders ~ http://www.americanlamb.com/app/uploads/2014/10/The-Country-Cat-Sliders.jpeg
    Image of Bruchetta ~ https://www.google.ca/search?q=google+images&espv=2&biw=1920&bih=935&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiO1t_v3ZTOAhVMyoMKHfiQCTwQ_AUIBigB#tbm=isch&q=Bruchetta&imgrc=KK0Prelglz9YXM%3A
+   Image of Chicken ~ http://www.delish.com/cooking/g2047/restaurant-chicken/
+   Image of Shrimp ~ https://www.google.ca/search?q=Restaurant+Mains&espv=2&biw=1920&bih=935&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiAjJmawJbOAhWFyoMKHeGWBLwQ_AUIBigB#tbm=isch&q=Restaurant+Food&imgrc=UPoVJauEVle5DM%3A
+   Image of Pizza ~ https://www.pexels.com/search/restaurant/
+   Image of Wings ~ https://www.google.ca/search?q=Restaurant+Mains&espv=2&biw=1920&bih=935&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiAjJmawJbOAhWFyoMKHeGWBLwQ_AUIBigB#tbm=isch&q=Restaurant+Food&imgrc=GxBgqfm_cV3yWM%3A
+   Image of Pecan Pie ~ https://www.google.ca/search?q=google+images+desserts&espv=2&biw=1920&bih=935&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiTrtTL65bOAhWB6YMKHQU_DrcQ_AUIBigB#tbm=isch&q=Pecan+Pie+restaurant&imgrc=bod-YS9t7qbQLM%3A
+   Image of Cheesecake ~ https://www.google.ca/search?q=google+images+desserts&espv=2&biw=1920&bih=935&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiTrtTL65bOAhWB6YMKHQU_DrcQ_AUIBigB#tbm=isch&q=Cheesecake+restaruant&imgrc=klw-CPP9rprwMM%3A
+   Image of Lava cake ~ https://www.google.ca/search?q=google+images+desserts&espv=2&biw=1920&bih=935&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiTrtTL65bOAhWB6YMKHQU_DrcQ_AUIBigB#imgrc=TU_j2Q33zI5u7M%3A
+
 -->
 
 
@@ -17,7 +27,7 @@
 
 @if (Model.Name == "Appetizers")
 {
-    <p>Appetizers: </p>
+    <h3>Appetizers: </h3>
     <!--This line sends ca call to MenuController -> Details and passes in Bruchetta-->
     <a href="@Url.Action("Details", "Menu", new { FoodType = "Bruchetta" })"> <img src="@Url.Content("~/Assets/Images/Bruschetta_Thumb.jpg")" alt="Home" /></a>
     <p>Bruchetta!</p>
@@ -34,16 +44,34 @@
 
 @if (Model.Name == "Mains")
 {
-    <p>Mains: </p>
-        <li>@Html.ActionLink("Bruchetta22", "Mains", new { FoodType = @"Bruchetta22" })</li>
-        <li>@Html.ActionLink("Pot Stickers22", "Mains", new { FoodType = @"Potstickers22" })</li>
-        <li>@Html.ActionLink("Nachos22", "Mains", new { FoodType = @"Nachos22" })</li>
+    <h3>Mains: </h3>
+    <!--This line sends ca call to MenuController -> Details and passes in Bruchetta-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Chicken" })"> <img src="@Url.Content("~/Assets/Images/Chicken_Thumb.jpg")" alt="Home" /></a>
+    <p>Roast Chicken!</p>
+    <!--This line sends ca call to MenuController -> Details and passes in Sliders-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Steak" })"> <img src="@Url.Content("~/Assets/Images/Steak_Thumb.jpg")" alt="Home" /></a>
+    <p>Grilled flank steak!</p>
+    <!--This line sends ca call to MenuController -> Details and passes in Nachos-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Shrimp" })"> <img src="@Url.Content("~/Assets/Images/Shrimp_Thumb.jpg")" alt="Home" /></a>
+    <p>Shrimp with rice!</p>
+    <!--This line sends ca call to MenuController -> Details and passes in Springroll-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Pizza" })"> <img src="@Url.Content("~/Assets/Images/Pizza_Thumb.jpg")" alt="Home" /></a>
+    <p>Pizza!</p>
+     <!--This line sends ca call to MenuController -> Details and passes in Springroll-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Wings" })"> <img src="@Url.Content("~/Assets/Images/Wings_Thumb.jpg")" alt="Home" /></a>
+    <p>Wings!</p>
 }
 
 @if (Model.Name == "Desserts")
 {
-    <p>Desserts: </p>
-        <li>@Html.ActionLink("Bruchetta44", "Desserts", new { FoodType = @"Bruchetta44" })</li>
-        <li>@Html.ActionLink("Pot Stickers44", "Desserts", new { FoodType = @"Potstickers44" })</li>
-        <li>@Html.ActionLink("Nachos44", "Desserts", new { FoodType = @"Nachos44" })</li>
+    <h3>Desserts: </h3>
+    <!--This line sends ca call to MenuController -> Details and passes in Bruchetta-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Cheesecake" })"> <img src="@Url.Content("~/Assets/Images/Cheesecake_Thumb.jpg")" alt="Home" /></a>
+    <p>Cheesecake!</p>
+    <!--This line sends ca call to MenuController -> Details and passes in Nachos-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "PecanPie" })"> <img src="@Url.Content("~/Assets/Images/PecanPie_Thumb.jpg")" alt="Home" /></a>
+    <p>Pecan pie!</p>
+    <!--This line sends ca call to MenuController -> Details and passes in Springroll-->
+    <a href="@Url.Action("Details", "Menu", new { FoodType = "Icecream" })"> <img src="@Url.Content("~/Assets/Images/Icecream_Thumb.jpg")" alt="Home" /></a>
+    <p>Icecream!</p>
 }

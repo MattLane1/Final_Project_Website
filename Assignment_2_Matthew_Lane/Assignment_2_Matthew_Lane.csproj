@@ -193,14 +193,32 @@
   <ItemGroup>
     <Content Include="Assets\Images\Bruschetta_Full.jpg" />
     <Content Include="Assets\Images\Bruschetta_Thumb.jpg" />
+    <Content Include="Assets\Images\Cheesecake_Full.jpg" />
+    <Content Include="Assets\Images\Cheesecake_Thumb.jpg" />
+    <Content Include="Assets\Images\Chicken_Full.jpg" />
+    <Content Include="Assets\Images\Chicken_Thumb.jpg" />
+    <Content Include="Assets\Images\Icecream_Full.jpg" />
+    <Content Include="Assets\Images\Icecream_Thumb.jpg" />
+    <Content Include="Assets\Images\LavaCake_Full.jpg" />
+    <Content Include="Assets\Images\LavaCake_Thumb.jpg" />
     <Content Include="Assets\Images\Location.jpg" />
     <Content Include="Assets\Images\logo.jpg" />
     <Content Include="Assets\Images\Nachos_Full.jpg" />
     <Content Include="Assets\Images\Nachos_Thumb.jpg" />
+    <Content Include="Assets\Images\PecanPie_Full.jpg" />
+    <Content Include="Assets\Images\PecanPie_Thumb.jpg" />
+    <Content Include="Assets\Images\Pizza_Full.jpg" />
+    <Content Include="Assets\Images\Pizza_Thumb.jpg" />
+    <Content Include="Assets\Images\Shrimp_Full.jpg" />
+    <Content Include="Assets\Images\Shrimp_Thumb.jpg" />
     <Content Include="Assets\Images\Sliders_Full.jpg" />
     <Content Include="Assets\Images\Sliders_Thumb.jpg" />
     <Content Include="Assets\Images\SpringRoll_Full.jpg" />
     <Content Include="Assets\Images\SpringRoll_Thumb.jpg" />
+    <Content Include="Assets\Images\Steak_Full.jpg" />
+    <Content Include="Assets\Images\Steak_Thumb.jpg" />
+    <Content Include="Assets\Images\Wings_Full.jpg" />
+    <Content Include="Assets\Images\Wings_Thumb.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -274,9 +292,6 @@
     <Content Include="Views\Menu\Index.cshtml" />
     <Content Include="Views\Menu\Details.cshtml" />
     <Content Include="Views\Menu\Browse.cshtml" />
-    <Content Include="Views\Menu\Appetizers.cshtml" />
-    <Content Include="Views\Menu\Mains.cshtml" />
-    <Content Include="Views\Menu\Desserts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
