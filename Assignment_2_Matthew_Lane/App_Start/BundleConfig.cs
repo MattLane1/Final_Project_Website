@@ -1,4 +1,13 @@
-﻿using System.Web;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : BundleConfig.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is BundleConfig file required by MVC
+  
+------------------------------------------------------------------------------*/
+
+using System.Web;
 using System.Web.Optimization;
 
 namespace Assignment_2_Matthew_Lane

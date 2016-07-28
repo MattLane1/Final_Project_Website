@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : Startup.Auth.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is StartUp.Auth file required for authentication
+  
+------------------------------------------------------------------------------*/
+
+using System;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;

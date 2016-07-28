@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : IdentiyConfig.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is IdentityConfig file required by MVC
+  
+------------------------------------------------------------------------------*/
+
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;

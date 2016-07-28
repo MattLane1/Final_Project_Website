@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : MenuController.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is MenuController class, which is the go to for anything that occurs on the Menu page
+  
+------------------------------------------------------------------------------*/
+
+using System;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -65,15 +74,5 @@ namespace Assignment_2_Matthew_Lane.Controllers
 
             return View(foodTypeModel);
         }
-
-        /* 
-           //
-           // GET: /Store/Details/5
-           public ActionResult Details(int id = 1)
-           {
-               Appetizers appetizer = new Appetizers { Title = "Appetizer " + id };
-               return View(appetizer);
-           }
-        */
     }
 }

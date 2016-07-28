@@ -1,4 +1,13 @@
-﻿using System.Collections.Generic;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : ManageViewModels.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is ManageViewModels class, which is the model for the various views used in the website
+  
+------------------------------------------------------------------------------*/
+
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;

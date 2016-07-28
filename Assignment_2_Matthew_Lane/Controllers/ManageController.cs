@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : ManageController.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is ManagerController class, which is the go to for anything pertaining to account management
+  
+------------------------------------------------------------------------------*/
+
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;

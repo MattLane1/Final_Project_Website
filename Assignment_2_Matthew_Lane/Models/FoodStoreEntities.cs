@@ -1,3 +1,12 @@
+/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : FoodStoreEntities.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is FoodStoreEntities class, which handles the connection to the database for the website
+  
+------------------------------------------------------------------------------*/
+
 namespace Assignment_2_Matthew_Lane.Models
 {
     using System;

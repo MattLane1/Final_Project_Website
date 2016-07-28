@@ -204,7 +204,8 @@
     <Content Include="Assets\Images\LavaCake_Full.jpg" />
     <Content Include="Assets\Images\LavaCake_Thumb.jpg" />
     <Content Include="Assets\Images\Location.jpg" />
-    <Content Include="Assets\Images\logo.jpg" />
+    <Content Include="Assets\Images\logo.gif" />
+    <Content Include="Assets\Images\logo.png" />
     <Content Include="Assets\Images\Nachos_Full.jpg" />
     <Content Include="Assets\Images\Nachos_Thumb.jpg" />
     <Content Include="Assets\Images\PecanPie_Full.jpg" />
@@ -238,6 +239,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="logo.gif" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

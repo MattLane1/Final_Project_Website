@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : AccountController.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is AccountController file used to create account and log in
+  
+------------------------------------------------------------------------------*/
+
+using System;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;

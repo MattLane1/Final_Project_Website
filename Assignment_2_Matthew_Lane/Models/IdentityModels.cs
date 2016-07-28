@@ -1,4 +1,13 @@
-﻿using System.Data.Entity;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : IdentityModels.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is IDentityModels class, which is the model for the users identity
+  
+------------------------------------------------------------------------------*/
+
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;

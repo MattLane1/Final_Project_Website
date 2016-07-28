@@ -1,3 +1,12 @@
+/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : Table.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is Table class, which is the table of information about the selected food, as given from the DB
+  
+------------------------------------------------------------------------------*/
+
 namespace Assignment_2_Matthew_Lane.Models
 {
     using System;

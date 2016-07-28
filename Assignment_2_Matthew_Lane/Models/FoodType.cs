@@ -1,11 +1,18 @@
-﻿using System;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : FoodType.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is FoodType class, which holds information about the type of food
+  
+------------------------------------------------------------------------------*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Assignment_2_Matthew_Lane.Models;
-
-//Album class
 
 namespace Assignment_2_Matthew_Lane.Models
 {

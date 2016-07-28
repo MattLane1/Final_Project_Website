@@ -1,4 +1,13 @@
-﻿using System.Collections.Generic;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : AccountViewModel.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is AccountViewModel class, which is the model for the accounts page
+  
+------------------------------------------------------------------------------*/
+
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Assignment_2_Matthew_Lane.Models
