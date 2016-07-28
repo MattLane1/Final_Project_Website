@@ -191,12 +191,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\BearsDen_01.png" />
     <Content Include="Assets\Images\Bruschetta_Full.jpg" />
     <Content Include="Assets\Images\Bruschetta_Thumb.jpg" />
     <Content Include="Assets\Images\Cheesecake_Full.jpg" />
     <Content Include="Assets\Images\Cheesecake_Thumb.jpg" />
     <Content Include="Assets\Images\Chicken_Full.jpg" />
     <Content Include="Assets\Images\Chicken_Thumb.jpg" />
+    <Content Include="Assets\Images\Front.jpg" />
     <Content Include="Assets\Images\Icecream_Full.jpg" />
     <Content Include="Assets\Images\Icecream_Thumb.jpg" />
     <Content Include="Assets\Images\LavaCake_Full.jpg" />
