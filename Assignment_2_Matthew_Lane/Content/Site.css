@@ -155,6 +155,8 @@ p
 {
 	margin-bottom: 15px;
 	margin-top: 0px;
+    font-family:Cambria;
+    font-size:medium;
 }
 
 h2
@@ -182,7 +184,7 @@ h3
 
 a:link, a:visited
 {
-	color: #F6855E;
+	color: #337ab7;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -317,4 +319,10 @@ th, td
 tr:hover
 {
 	background-color: #fff;
+}
+
+body
+{
+    background-color: #fff;
+    padding-top: 65px; 
 }
