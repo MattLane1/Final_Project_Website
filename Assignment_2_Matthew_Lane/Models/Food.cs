@@ -14,6 +14,7 @@ using System.Web;
 
 namespace Assignment_2_Matthew_Lane.Models
 {
+    //Object of food type. Used to allow specification of what the food is, and passed as a peram in several places
     public class Food
     {
         public int FoodID { get; set; }

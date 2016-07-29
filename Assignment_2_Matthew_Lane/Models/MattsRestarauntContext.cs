@@ -15,6 +15,7 @@ using System.Web;
 
 namespace Assignment_2_Matthew_Lane.Models
 {
+    //Database context
     public class MattsRestarauntContext : DbContext
     {
         public virtual DbSet<FoodType> FoodTypes { get; set; }

@@ -27,16 +27,19 @@ namespace Assignment_2_Matthew_Lane.Controllers
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
+        //Empty Constructor
         public AccountController()
         {
         }
 
+        //Constructor used for signing in
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;
             SignInManager = signInManager;
         }
 
+        //Allow sign in
         public ApplicationSignInManager SignInManager
         {
             get
@@ -49,6 +52,7 @@ namespace Assignment_2_Matthew_Lane.Controllers
             }
         }
 
+        //Check for user
         public ApplicationUserManager UserManager
         {
             get
