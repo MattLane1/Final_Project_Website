@@ -93,9 +93,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Assignment_2_Matthew_Lane\Assignment_2_Matthew_Lane.csproj">
+    <ProjectReference Include="..\Assignment_2_Matthew_Lane\Final_Project_Matthew_Lane.csproj">
       <Project>{596975B9-EAE1-4E4E-BCE1-48BEB98C96E1}</Project>
-      <Name>Assignment_2_Matthew_Lane</Name>
+      <Name>Final_Project_Matthew_Lane</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
