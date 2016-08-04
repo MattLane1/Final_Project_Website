@@ -1,12 +1,3 @@
-/*------------------------------------------------------------------------------
-
-  @Author : Matthew Lane
-  @File Name : FoodStoreEntities.cs
-  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
-  @File Description : This is FoodStoreEntities class, which handles the connection to the database for the website
-  
-------------------------------------------------------------------------------*/
-
 namespace Assignment_2_Matthew_Lane.Models
 {
     using System;
@@ -17,19 +8,25 @@ namespace Assignment_2_Matthew_Lane.Models
     public partial class FoodStoreEntities : DbContext
     {
         public FoodStoreEntities()
-            : base("name=FoodStoreEntities")
+            : base("name=FoodStoreConnection")
         {
         }
+        //Menu table
+        public virtual DbSet<Table> MenuItems { get; set; }
 
-        public virtual DbSet<Table> Tables { get; set; }
+        //test split tables
+        public virtual DbSet<Table> Appetizers { get; set; }
+        public virtual DbSet<Table> Mains { get; set; }
+        public virtual DbSet<Table> Desserts { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Table>()
-                 .Property(e => e.Id);
+                .Property(e => e.Id);
 
             modelBuilder.Entity<Table>()
-                 .Property(e => e.FoodType);
+                .Property(e => e.FoodType);
 
             modelBuilder.Entity<Table>()
                 .Property(e => e.FoodName)
@@ -42,8 +39,6 @@ namespace Assignment_2_Matthew_Lane.Models
             modelBuilder.Entity<Table>()
                 .Property(e => e.FoodDescription)
                 .IsUnicode(false);
-
-            
         }
     }
 }

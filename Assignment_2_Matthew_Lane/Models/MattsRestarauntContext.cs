@@ -18,7 +18,19 @@ namespace Assignment_2_Matthew_Lane.Models
     //Database context
     public class MattsRestarauntContext : DbContext
     {
+        public MattsRestarauntContext()
+            :base("name=FoodStoreConnection")
+        {
+
+        }
+
+
+
         public virtual DbSet<FoodType> FoodTypes { get; set; }
         public virtual DbSet<Food> Foods { get; set; }
+        public virtual DbSet<Table> Table { get; set; }
     }
+
+
+
 }
