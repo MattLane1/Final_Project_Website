@@ -23,5 +23,12 @@ namespace Assignment_2_Matthew_Lane.Controllers
         {
             return View();
         }
+
+        //Display the about page
+        public ActionResult About()
+        {
+
+            return View();
+        }
     }
 }
