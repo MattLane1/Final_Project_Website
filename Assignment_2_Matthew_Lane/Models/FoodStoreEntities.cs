@@ -26,6 +26,12 @@ namespace Assignment_2_Matthew_Lane.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Table>()
+                 .Property(e => e.Id);
+
+            modelBuilder.Entity<Table>()
+                 .Property(e => e.FoodType);
+
+            modelBuilder.Entity<Table>()
                 .Property(e => e.FoodName)
                 .IsUnicode(false);
 

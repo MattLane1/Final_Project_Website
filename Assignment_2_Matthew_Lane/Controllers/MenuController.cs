@@ -44,7 +44,6 @@ namespace Assignment_2_Matthew_Lane.Controllers
             return View(foodTypeModel);
         }
 
-
         public ActionResult Appetizers(string FoodType)
         {
             FoodType foodTypeModel = new FoodType { Name = FoodType };
@@ -69,8 +68,6 @@ namespace Assignment_2_Matthew_Lane.Controllers
         public ActionResult Details(string FoodType)
         {
             FoodType foodTypeModel = new FoodType { Name = FoodType };
-
-
 
             return View(foodTypeModel);
         }
