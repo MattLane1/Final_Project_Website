@@ -39,7 +39,7 @@
 @if (Model.Name == "Appetizers")
 {
     <h3>Appetizers: </h3>
-    <!--This line sends ca call to MenuController -> Details and passes in Bruchetta-->
+    <!--This line sends ca call to MenuController -> Details and passes in Bruschetta-->
     <a href="@Url.Action("Details", "Menu", new { FoodType = "Bruchetta" })"> <img src="@Url.Content("~/Assets/Images/Bruschetta_Thumb.jpg")" alt="Home" /></a>
     <p>Bruchetta!</p>
     <!--This line sends ca call to MenuController -> Details and passes in Sliders-->
@@ -56,19 +56,19 @@
 @if (Model.Name == "Mains")
 {
     <h3>Mains: </h3>
-    <!--This line sends ca call to MenuController -> Details and passes in Bruchetta-->
+    <!--This line sends ca call to MenuController -> Details and passes in Chicken-->
     <a href="@Url.Action("Details", "Menu", new { FoodType = "Chicken" })"> <img src="@Url.Content("~/Assets/Images/Chicken_Thumb.jpg")" alt="Home" /></a>
     <p>Roast Chicken!</p>
-    <!--This line sends ca call to MenuController -> Details and passes in Sliders-->
+    <!--This line sends ca call to MenuController -> Details and passes in Steak-->
     <a href="@Url.Action("Details", "Menu", new { FoodType = "Steak" })"> <img src="@Url.Content("~/Assets/Images/Steak_Thumb.jpg")" alt="Home" /></a>
     <p>Grilled flank steak!</p>
-    <!--This line sends ca call to MenuController -> Details and passes in Nachos-->
+    <!--This line sends ca call to MenuController -> Details and passes in Shrimp-->
     <a href="@Url.Action("Details", "Menu", new { FoodType = "Shrimp" })"> <img src="@Url.Content("~/Assets/Images/Shrimp_Thumb.jpg")" alt="Home" /></a>
     <p>Shrimp with rice!</p>
-    <!--This line sends ca call to MenuController -> Details and passes in Springroll-->
+    <!--This line sends ca call to MenuController -> Details and passes in Pizza-->
     <a href="@Url.Action("Details", "Menu", new { FoodType = "Pizza" })"> <img src="@Url.Content("~/Assets/Images/Pizza_Thumb.jpg")" alt="Home" /></a>
     <p>Pizza!</p>
-     <!--This line sends ca call to MenuController -> Details and passes in Springroll-->
+     <!--This line sends ca call to MenuController -> Details and passes in Wings-->
     <a href="@Url.Action("Details", "Menu", new { FoodType = "Wings" })"> <img src="@Url.Content("~/Assets/Images/Wings_Thumb.jpg")" alt="Home" /></a>
     <p>Wings!</p>
 }
@@ -76,13 +76,13 @@
 @if (Model.Name == "Desserts")
 {
     <h3>Desserts: </h3>
-    <!--This line sends ca call to MenuController -> Details and passes in Bruchetta-->
+    <!--This line sends ca call to MenuController -> Details and passes in Cheesecake-->
     <a href="@Url.Action("Details", "Menu", new { FoodType = "Cheesecake" })"> <img src="@Url.Content("~/Assets/Images/Cheesecake_Thumb.jpg")" alt="Home" /></a>
     <p>Cheesecake!</p>
-    <!--This line sends ca call to MenuController -> Details and passes in Nachos-->
+    <!--This line sends ca call to MenuController -> Details and passes in PecanPie-->
     <a href="@Url.Action("Details", "Menu", new { FoodType = "PecanPie" })"> <img src="@Url.Content("~/Assets/Images/PecanPie_Thumb.jpg")" alt="Home" /></a>
     <p>Pecan pie!</p>
-    <!--This line sends ca call to MenuController -> Details and passes in Springroll-->
+    <!--This line sends ca call to MenuController -> Details and passes in Icecream-->
     <a href="@Url.Action("Details", "Menu", new { FoodType = "Icecream" })"> <img src="@Url.Content("~/Assets/Images/Icecream_Thumb.jpg")" alt="Home" /></a>
-    <p>Icecream!</p>
+    <p>Ice-cream!</p>
 }
