@@ -9,6 +9,8 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -39,8 +41,13 @@ namespace Assignment_2_Matthew_Lane.Models
         //FoodTypeID is the key used for the database
         //foodGenre holds the information of what group the food belongs to (App, Main, Dessert)
         //Name holds the foods name
+
         public virtual int foodTypeID { get; set; }
         public virtual string Name { get; set; }
-        public virtual FoodType foodGenre { get; set; }
+        public virtual string Description { get; set; }
+        public virtual int FoodID { get; set; }
+        public virtual decimal Price { get; set; }
+        public virtual string FoodPictureUrl { get; set; }
+      //  public virtual List<FoodType> foodType { get; set; }
     }
 }

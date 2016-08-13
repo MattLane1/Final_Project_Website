@@ -23,6 +23,9 @@ namespace Assignment_2_Matthew_Lane.Controllers
 {
     public class MenuController : Controller
     {
+
+        FoodStoreContext storeDB = new FoodStoreContext();
+
         //
         // GET: Store
         public ActionResult Index()
@@ -36,38 +39,20 @@ namespace Assignment_2_Matthew_Lane.Controllers
 
             return View(foodtypes);
         }
-        //
-        // GET: /Store/Browse?genre=Disco
+
         public ActionResult Browse(string FoodType)
         {
             FoodType foodTypeModel = new FoodType { Name = FoodType };
             return View(foodTypeModel);
         }
 
-        public ActionResult Appetizers(string FoodType)
-        {
-            FoodType foodTypeModel = new FoodType { Name = FoodType };
-
-            return View(foodTypeModel);
-        }
-
-        public ActionResult Mains(string FoodType)
-        {
-            FoodType foodTypeModel = new FoodType { Name = FoodType };
-
-            return View(foodTypeModel);
-        }
-
-        public ActionResult Desserts(string FoodType)
-        {
-            FoodType foodTypeModel = new FoodType { Name = FoodType };
-
-            return View(foodTypeModel);
-        }
-
         public ActionResult Details(string FoodType)
         {
-            FoodType foodTypeModel = new FoodType { Name = FoodType };
+            FoodType foodTypeModel = new FoodType { foodTypeID = 1, Name = FoodType, Description = null, FoodID = 1, Price = 5.00M, FoodPictureUrl = null  };
+            //       Food food = storeDB.Food.Find(1);//id
+
+         //   FoodType foodTypeModel = new FoodType { Name = FoodType };
+
 
             return View(foodTypeModel);
         }

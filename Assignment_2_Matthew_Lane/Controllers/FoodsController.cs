@@ -22,12 +22,12 @@ namespace Assignment_2_Matthew_Lane.Controllers
 {
     public class FoodsController : Controller
     {
-        private MattsRestarauntContext db = new MattsRestarauntContext();
+        private FoodStoreContext db = new FoodStoreContext();
 
         // GET: Foods
         public async Task<ActionResult> Index()
         {
-            return View(await db.Foods.ToListAsync());
+            return View(await db.Food.ToListAsync());
         }
 
         // GET: Foods/Details/5
@@ -37,7 +37,7 @@ namespace Assignment_2_Matthew_Lane.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Food food = await db.Foods.FindAsync(id);
+            Food food = await db.Food.FindAsync(id);
             if (food == null)
             {
                 return HttpNotFound();
@@ -60,7 +60,7 @@ namespace Assignment_2_Matthew_Lane.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Foods.Add(food);
+                db.Food.Add(food);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
@@ -75,7 +75,7 @@ namespace Assignment_2_Matthew_Lane.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Food food = await db.Foods.FindAsync(id);
+            Food food = await db.Food.FindAsync(id);
             if (food == null)
             {
                 return HttpNotFound();
@@ -106,7 +106,7 @@ namespace Assignment_2_Matthew_Lane.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Food food = await db.Foods.FindAsync(id);
+            Food food = await db.Food.FindAsync(id);
             if (food == null)
             {
                 return HttpNotFound();
@@ -119,8 +119,8 @@ namespace Assignment_2_Matthew_Lane.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            Food food = await db.Foods.FindAsync(id);
-            db.Foods.Remove(food);
+            Food food = await db.Food.FindAsync(id);
+            db.Food.Remove(food);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }

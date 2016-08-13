@@ -62,13 +62,13 @@ ul
 	font-size: 14px;
 }
 
-ul#album-list
+ul#afood-list
 {
 	list-style: none;
 	margin-left: 0px;
 }
 
-ul#album-list li
+ul#afood-list li
 {
 	height: 130px;
 	width: 100px;
@@ -77,13 +77,13 @@ ul#album-list li
 	text-align: center;
 }
 
-ul#album-list li a, ul#album-list li .button
+ul#afood-list li a, ul#afood-list li .button
 {
 	font-size: 13px;
 	float: left;
 }
 
-ul#album-list li a span
+ul#afood-list li a span
 {
 	color: #9b9993;
 	text-decoration: underline;
@@ -235,7 +235,7 @@ a:active
 	color: #F46739;
 }
 
-div#album-details p
+div#afood-details p
 {
 	margin-bottom: 5px;
 	color: #5e5b54;
