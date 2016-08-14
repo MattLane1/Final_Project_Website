@@ -26,36 +26,18 @@ namespace Assignment_2_Matthew_Lane.Models
 
         }
 
-
-
-        // public virtual int FoodID { get; set; }
-        // public virtual string FoodName { get; set; }
-        // public virtual int Price { get; set; 
-
         public Food(string FoodName)
         {
             this.FoodName = FoodName;
         }
 
+        /*Information about the food item*/
         public virtual int FoodID { get; set; }
         public virtual string FoodName { get; set; }
         public virtual int FoodTypeID { get; set; }
         public virtual decimal Price { get; set; }
         public virtual string FoodPictureUrl { get; set; }
         public virtual string Description { get; set; }
-
-
-        /*
-         public virtual string FoodName { get; set; }
-         [Display(Name = "Food")]
-         public virtual int FoodID { get; set; }
-         [Display(Name = "FoodType")]
-         public virtual int FoodTypeID { get; set; }
-         public virtual decimal Price { get; set; }
-         [Display(Name = "Food Picture URL")]
-         public virtual string FoodPictureUrl { get; set; }
-       //  public virtual FoodType FoodType { get; set; }
-       */
     }
 
 }

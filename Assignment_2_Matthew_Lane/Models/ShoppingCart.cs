@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : ShoppingCart.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is ShoppingCart class, which holds the functions for the actions of the cart the user uses to place an order. 
+  
+------------------------------------------------------------------------------*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

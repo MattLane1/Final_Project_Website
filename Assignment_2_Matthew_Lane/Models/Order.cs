@@ -1,10 +1,20 @@
-﻿using System.Collections.Generic;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : Order.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is the orders page. When a user wants to place an order, this requests their information. 
+  
+------------------------------------------------------------------------------*/
+
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
 namespace Assignment_2_Matthew_Lane.Models
 {
+    /*Request the users information, there where there is no ScaffoldColumn(false) line above it. These lines are automatically generated*/
     public class Order
     {
         [ScaffoldColumn(false)]

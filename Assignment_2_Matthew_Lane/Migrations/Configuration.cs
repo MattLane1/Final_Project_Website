@@ -1,3 +1,12 @@
+/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : Configurations.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is Configurations file used to Migrate changes made to the object, to the database automatically. This keeps the DB up to date.
+  
+------------------------------------------------------------------------------*/
+
 namespace Assignment_2_Matthew_Lane.Migrations
 {
     using System;

@@ -3,7 +3,7 @@
   @Author : Matthew Lane
   @File Name : ManageViewModels.cs
   @Website Name : Assignment_2_The_Bear_Den_Restaraunt
-  @File Description : This is ManageViewModels class, which is the model for the various views used in the website
+  @File Description : This is ManageViewModels class, which is the model for user identity management
   
 ------------------------------------------------------------------------------*/
 
@@ -14,6 +14,7 @@ using Microsoft.Owin.Security;
 
 namespace Assignment_2_Matthew_Lane.Models
 {
+
     public class IndexViewModel
     {
         public bool HasPassword { get; set; }
@@ -23,6 +24,7 @@ namespace Assignment_2_Matthew_Lane.Models
         public bool BrowserRemembered { get; set; }
     }
 
+    /*Manage the various user accounts*/
     public class ManageLoginsViewModel
     {
         public IList<UserLoginInfo> CurrentLogins { get; set; }
@@ -34,6 +36,7 @@ namespace Assignment_2_Matthew_Lane.Models
         public string Purpose { get; set; }
     }
 
+    /*Set the users password*/
     public class SetPasswordViewModel
     {
         [Required]
@@ -48,6 +51,7 @@ namespace Assignment_2_Matthew_Lane.Models
         public string ConfirmPassword { get; set; }
     }
 
+    /*Change the users password*/
     public class ChangePasswordViewModel
     {
         [Required]
@@ -66,7 +70,7 @@ namespace Assignment_2_Matthew_Lane.Models
         [Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
-
+    /*Add a phone number to the users account*/
     public class AddPhoneNumberViewModel
     {
         [Required]
@@ -74,7 +78,7 @@ namespace Assignment_2_Matthew_Lane.Models
         [Display(Name = "Phone Number")]
         public string Number { get; set; }
     }
-
+    /*Verify the specified phone number*/
     public class VerifyPhoneNumberViewModel
     {
         [Required]
@@ -86,7 +90,7 @@ namespace Assignment_2_Matthew_Lane.Models
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
     }
-
+    /*Configure the model*/
     public class ConfigureTwoFactorViewModel
     {
         public string SelectedProvider { get; set; }

@@ -3,7 +3,7 @@
   @Author : Matthew Lane
   @File Name : IdentityModels.cs
   @Website Name : Assignment_2_The_Bear_Den_Restaraunt
-  @File Description : This is IDentityModels class, which is the model for the users identity
+  @File Description : This is IDentityModels class, which is the model for the users identity, who they are, once signed in.
   
 ------------------------------------------------------------------------------*/
 
@@ -22,7 +22,7 @@ namespace Assignment_2_Matthew_Lane.Models
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
-            // Add custom user claims here
+            //Send back the identity of this user
             return userIdentity;
         }
     }

@@ -1,10 +1,20 @@
-﻿using System;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : OrderDetail.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is OrderDetail page, which is the model for the information about the order the user is placing
+  
+------------------------------------------------------------------------------*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace Assignment_2_Matthew_Lane.Models
 {
+    /*Provide information about the order to the user*/
     public class OrderDetail
     {
         public virtual int OrderDetailId { get; set; }

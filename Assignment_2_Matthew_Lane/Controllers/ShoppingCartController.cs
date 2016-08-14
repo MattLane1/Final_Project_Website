@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*------------------------------------------------------------------------------
+
+  @Author : Matthew Lane
+  @File Name : AccountController.cs
+  @Website Name : Assignment_2_The_Bear_Den_Restaraunt
+  @File Description : This is ShoppingCartController file used control the actions of the shopping cart, like adding items to the cart.
+  
+------------------------------------------------------------------------------*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -31,13 +40,13 @@ namespace Assignment_2_Matthew_Lane.Controllers
         // GET: /Store/AddToCart/5
         public ActionResult AddToCart(int id)
         {            
-            // Retrieve the album from the database
-            var addedAlbum = storeDB.Food.Single(food => food.FoodID == id);
+            // Retrieve the Food item from the database
+            var addedFood = storeDB.Food.Single(food => food.FoodID == id);
 
             // Add it to the shopping cart
             var cart = ShoppingCart.GetCart(this.HttpContext);
 
-            cart.AddToCart(addedAlbum);
+            cart.AddToCart(addedFood);
 
             // Go back to the main store page for more shopping
             return RedirectToAction("Index");
@@ -50,8 +59,8 @@ namespace Assignment_2_Matthew_Lane.Controllers
             // Remove the item from the cart
             var cart = ShoppingCart.GetCart(this.HttpContext);
 
-            // Get the name of the album to display confirmation
-            string albumName = storeDB.Carts
+            // Get the name of the Food to display confirmation
+            string foodName = storeDB.Carts
                 .Single(item => item.RecordId == id).Food.FoodName;
 
             // Remove from cart
@@ -60,7 +69,7 @@ namespace Assignment_2_Matthew_Lane.Controllers
             // Display the confirmation message
             var results = new ShoppingCartRemoveViewModel
             {
-                Message = Server.HtmlEncode(albumName) +
+                Message = Server.HtmlEncode(foodName) +
                     " has been removed from your shopping cart.",
                 CartTotal = cart.GetTotal(),
                 CartCount = cart.GetCount(),
