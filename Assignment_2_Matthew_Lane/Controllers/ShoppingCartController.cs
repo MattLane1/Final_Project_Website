@@ -30,11 +30,7 @@ namespace Assignment_2_Matthew_Lane.Controllers
         //
         // GET: /Store/AddToCart/5
         public ActionResult AddToCart(int id)
-        {
-            Food Foods = new Food();
-            storeDB.Food.Add(Foods);
-            storeDB.SaveChanges();
-            
+        {            
             // Retrieve the album from the database
             var addedAlbum = storeDB.Food.Single(food => food.FoodID == id);
 
