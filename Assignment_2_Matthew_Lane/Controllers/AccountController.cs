@@ -39,6 +39,15 @@ namespace Assignment_2_Matthew_Lane.Controllers
             SignInManager = signInManager;
         }
 
+        private void MigrateShoppingCart(string UserName)
+        {
+            // Associate shopping cart items with logged-in user
+            var cart = ShoppingCart.GetCart(this.HttpContext);
+
+            cart.MigrateCart(UserName);
+            Session[ShoppingCart.CartSessionKey] = UserName;
+        }
+
         //Allow sign in
         public ApplicationSignInManager SignInManager
         {
@@ -495,4 +504,6 @@ namespace Assignment_2_Matthew_Lane.Controllers
         }
         #endregion
     }
+
 }
+
